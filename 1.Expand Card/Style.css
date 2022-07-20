@@ -1,0 +1,166 @@
+/*font*/
+
+@font-face {
+  font-family: "adidas-bold";
+  src: url(./fonts/adidas-bold.otf);
+}
+
+@font-face {
+  font-family: "adidas-reg";
+  src: url(./fonts/adidas-regular.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "adidas-reg";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "adidas-bold";
+  font-weight: 700;
+}
+#main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.logo-container img {
+  width: 5rem;
+  cursor: pointer;
+}
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart {
+  margin-right: 20px;
+}
+.cart,
+.burger-menu {
+  cursor: pointer;
+}
+
+.line {
+  width: 2rem;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+}
+
+.images-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.container:nth-child(1) {
+  background-image: url(./images/blue.jpg);
+}
+
+.container:nth-child(2) {
+  background-image: url(./images/yellow.jpg);
+}
+
+.container:nth-child(3) {
+  background-image: url(./images/red.jpg);
+}
+
+.container:nth-child(4) {
+  background-image: url(./images/green.jpg);
+}
+
+.container:hover {
+  width: 40%;
+  transition: 1000ms;
+  transition-timing-function: linear;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  padding: 15px 0;
+  width: 60%;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+footer span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+footer span:nth-child(1) {
+  color: #009fe6;
+}
+
+footer span:nth-child(2) {
+  color: #f2cc60;
+}
+
+footer span:nth-child(3) {
+  color: #d54a4b;
+}
+
+footer span:nth-child() {
+  color: #00b078;
+}
+
+footer a {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #000;
+}
